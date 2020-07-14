@@ -82,7 +82,23 @@ console.log(dogFeeder(1, 15));
 // use math.random to determine the computers choice
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
+function letsPlay(option) {
+  let comp = Math.floor(Math.random() * 3);
+  const compChoice = ["scissors", "paper", "rock"];
+  const choice = compChoice[comp];
 
+  console.log("Computer picked " + choice);
+
+  if ((choice === "scissors" && option === "paper") || (choice === "paper" && option === "rock") || (choice === "rock" && option === "scissors") ) {
+    return "You lose.";
+  } else if ((choice === "scissors" && option === "rock") || (choice === "paper" && option === "scissors") || (choice === "rock" && option === "paper")) {
+    return "You win!";
+  } else {
+    return "It's a draw!";
+  }
+}
+
+console.log(letsPlay("scissors"));
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
