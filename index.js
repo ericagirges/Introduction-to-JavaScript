@@ -103,13 +103,34 @@ console.log(letsPlay("scissors"));
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
+function kmConverter(km) {
+    return km * 0.621371
+}
+
+console.log(kmConverter(16));
+
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
+
+function feetConverter(ft) {
+    return ft * 30.48
+}
+
+console.log(feetConverter(4));
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
+
+function annoyingSong(){
+    for(let i = 99; i > 0; i--) {
+        const leftOver = i - 1;
+        console.log(i + " bottles of soda on the wall, " + i + " bottles of soda, take one down pass it around " + leftOver + " bottles of soda on the wall");
+    }
+}
+
+annoyingSong();
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
