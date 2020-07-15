@@ -162,6 +162,19 @@ console.log(gradeCalculator(87));
 // Hint - you may need to study tomorrow's traning kit on arrays
 // try looking up the .includes() method
 
+function totalVowels(str) {
+
+    let vowels = str.match(/[aeiou]/gi);
+
+    if(vowels) {
+        return vowels.length
+    }else{
+        return 0;
+    }
+}
+
+console.log(totalVowels("Supercalifragilisticexpealidocious"));
+
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
